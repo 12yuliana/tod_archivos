@@ -1,0 +1,295 @@
+login as: yuliana
+yuliana@192.168.56.102's password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-81-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of mié 01 mar 2023 20:30:00 UTC
+
+  System load:  0.26              Processes:               126
+  Usage of /:   42.1% of 8.79GB   Users logged in:         1
+  Memory usage: 11%               IPv4 address for enp0s3: 192.168.56.102
+  Swap usage:   0%
+
+
+0 updates can be applied immediately.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your In
+
+
+Last login: Wed Mar  1 20:28:14 2023
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+yuliana@lamp:~$ ls /
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mn
+yuliana@lamp:~$ ls /
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swap.img  usr
+yuliana@lamp:~$ pwd
+/home/yuliana
+yuliana@lamp:~$ cd /home
+yuliana@lamp:/home$ ls -l
+total 4
+drwxr-xr-x 3 yuliana yuliana 4096 mar  1 20:28 yuliana
+yuliana@lamp:/home$ mkdir gestion
+mkdir: cannot create directory ‘gestion’: Permission denied
+yuliana@lamp:/home$ cd yuliana
+yuliana@lamp:~$ mkdir gestion
+yuliana@lamp:~$ ls
+gestion
+yuliana@lamp:~$ cd gestion
+yuliana@lamp:~/gestion$ ls -al
+total 8
+drwxrwxr-x 2 yuliana yuliana 4096 mar  1 20:34 .
+drwxr-xr-x 4 yuliana yuliana 4096 mar  1 20:34 ..
+yuliana@lamp:~/gestion$ nano aprendiz
+yuliana@lamp:~/gestion$ ls -l
+total 4
+-rw-rw-r-- 1 yuliana yuliana 8 mar  1 20:38 aprendiz
+yuliana@lamp:~/gestion$ nano aprendiz
+yuliana@lamp:~/gestion$ man ls
+yuliana@lamp:~/gestion$ ls -l
+total 4
+-rw-rw-r-- 1 yuliana yuliana 8 mar  1 20:38 aprendiz
+yuliana@lamp:~/gestion$ cat aprendiz
+usuario
+yuliana@lamp:~/gestion$ cat aprediz
+cat: aprediz: No such file or directory
+yuliana@lamp:~/gestion$ nano aprendiz
+yuliana@lamp:~/gestion$ ls -l
+total 4
+-rw-rw-r-- 1 yuliana yuliana 29 mar  1 20:47 aprendiz
+yuliana@lamp:~/gestion$ cat aprediz
+cat: aprediz: No such file or directory
+yuliana@lamp:~/gestion$ cat aprendiz
+usuario hola mundo como esta
+yuliana@lamp:~/gestion$ cat aprendiz | cut -d " " -f3 aprendiz
+mundo
+yuliana@lamp:~/gestion$ ls -l
+total 4
+-rw-rw-r-- 1 yuliana yuliana 29 mar  1 20:47 aprendiz
+yuliana@lamp:~/gestion$ ls -s
+total 4
+4 aprendiz
+yuliana@lamp:~/gestion$ touch prueba
+yuliana@lamp:~/gestion$ ls -s
+total 4
+4 aprendiz  0 prueba
+yuliana@lamp:~/gestion$ ls -s gestion
+ls: cannot access 'gestion': No such file or directory
+yuliana@lamp:~/gestion$ -s gestion
+-s: command not found
+yuliana@lamp:~/gestion$ ls -l
+total 4
+-rw-rw-r-- 1 yuliana yuliana 29 mar  1 20:47 aprendiz
+-rw-rw-r-- 1 yuliana yuliana  0 mar  1 20:56 prueba
+yuliana@lamp:~/gestion$ cp aprendiz redes
+yuliana@lamp:~/gestion$ ls -s
+total 8
+4 aprendiz  0 prueba  4 redes
+yuliana@lamp:~/gestion$ mv prueba ejemplo
+yuliana@lamp:~/gestion$ ls -s
+total 8
+4 aprendiz  0 ejemplo  4 redes
+yuliana@lamp:~/gestion$ mkdir otro
+yuliana@lamp:~/gestion$ ls -s
+total 12
+4 aprendiz  0 ejemplo  4 otro  4 redes
+yuliana@lamp:~/gestion$ nano nuevo
+yuliana@lamp:~/gestion$ nano nuevo
+yuliana@lamp:~/gestion$ rm nuevo
+yuliana@lamp:~/gestion$ cd otro
+yuliana@lamp:~/gestion/otro$ nano nuevo
+yuliana@lamp:~/gestion/otro$ nano nuevo
+yuliana@lamp:~/gestion/otro$ cd gestion
+-bash: cd: gestion: No such file or directory
+yuliana@lamp:~/gestion/otro$ cd ..
+yuliana@lamp:~/gestion$ cd ..
+yuliana@lamp:~$ cp -R gestion proyect
+yuliana@lamp:~$ ls -s
+total 8
+4 gestion  4 proyect
+yuliana@lamp:~$ gestion: $rm -r gestion
+gestion:: command not found
+yuliana@lamp:~$ rm r gestion
+rm: cannot remove 'r': No such file or directory
+rm: cannot remove 'gestion': Is a directory
+yuliana@lamp:~$ rm -r gestion
+yuliana@lamp:~$ ls -s
+total 4
+4 proyect
+yuliana@lamp:~$ cd ..
+yuliana@lamp:/home$ cd ..
+yuliana@lamp:/$ cd ..
+yuliana@lamp:/$ cd proyect
+-bash: cd: proyect: No such file or directory
+yuliana@lamp:/$ ls -l
+total 1795144
+lrwxrwxrwx   1 root root          7 ago 24  2021 bin -> usr/bin
+drwxr-xr-x   4 root root       4096 mar  1 20:26 boot
+drwxr-xr-x   2 root root       4096 mar  1 20:25 cdrom
+drwxr-xr-x  20 root root       4100 mar  1 20:27 dev
+drwxr-xr-x  97 root root       4096 mar  1 20:28 etc
+drwxr-xr-x   3 root root       4096 mar  1 20:28 home
+lrwxrwxrwx   1 root root          7 ago 24  2021 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 ago 24  2021 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          9 ago 24  2021 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root         10 ago 24  2021 libx32 -> usr/libx32
+drwx------   2 root root      16384 mar  1 20:24 lost+found
+drwxr-xr-x   2 root root       4096 ago 24  2021 media
+drwxr-xr-x   2 root root       4096 ago 24  2021 mnt
+drwxr-xr-x   2 root root       4096 ago 24  2021 opt
+dr-xr-xr-x 163 root root          0 mar  1 20:27 proc
+drwx------   4 root root       4096 mar  1 20:28 root
+drwxr-xr-x  28 root root        840 mar  1 20:30 run
+lrwxrwxrwx   1 root root          8 ago 24  2021 sbin -> usr/sbin
+drwxr-xr-x   6 root root       4096 ago 24  2021 snap
+drwxr-xr-x   2 root root       4096 ago 24  2021 srv
+-rw-------   1 root root 1838153728 mar  1 20:26 swap.img
+dr-xr-xr-x  13 root root          0 mar  1 20:27 sys
+drwxrwxrwt  11 root root       4096 mar  1 21:12 tmp
+drwxr-xr-x  15 root root       4096 ago 24  2021 usr
+drwxr-xr-x  13 root root       4096 ago 24  2021 var
+yuliana@lamp:/$ cd ..
+yuliana@lamp:/$ cd home
+yuliana@lamp:/home$ cd proyect
+-bash: cd: proyect: No such file or directory
+yuliana@lamp:/home$ ls -s
+total 4
+4 yuliana
+yuliana@lamp:/home$ ls -l
+total 4
+drwxr-xr-x 5 yuliana yuliana 4096 mar  1 22:07 yuliana
+yuliana@lamp:/home$ cd yuliana
+yuliana@lamp:~$ cd proyect
+yuliana@lamp:~/proyect$ echo
+
+yuliana@lamp:~/proyect$ echo "hello world">aprendiz
+yuliana@lamp:~/proyect$ cat aprendiz
+hello world
+yuliana@lamp:~/proyect$ cut-d "" -f3 aprendiz
+cut-d: command not found
+yuliana@lamp:~/proyect$ cut-d " " -f3 aprendiz
+cut-d: command not found
+yuliana@lamp:~/proyect$ cut -d " " -f3 aprendiz
+
+yuliana@lamp:~/proyect$ cat aprendiz
+hello world
+yuliana@lamp:~/proyect$ cut -d " " -f2 aprendiz
+world
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2
+world
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2 aprendiz
+world
+yuliana@lamp:~/proyect$ ls -l
+total 12
+-rw-rw-r-- 1 yuliana yuliana   12 mar  1 22:17 aprendiz
+-rw-rw-r-- 1 yuliana yuliana    0 mar  1 22:02 ejemplo
+drwxrwxr-x 2 yuliana yuliana 4096 mar  1 22:02 otro
+-rw-rw-r-- 1 yuliana yuliana   29 mar  1 22:02 redes
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2 ejemplo
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 aprendiz
+hello
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f3 aprendiz
+
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 , f2 aprendiz
+cut: ,: No such file or directory
+cut: f2: No such file or directory
+hello
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 f2 aprendiz
+cut: f2: No such file or directory
+hello
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d ""-f2 aprendiz
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2 aprendiz
+world
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2 aprendiz
+world
+yuliana@lamp:~/proyect$ cat aprendiz
+hello world
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 aprendiz
+hello}
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 aprendiz
+hello
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 aprendiz
+hello
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2 aprendiz}}
+cut: aprendiz}}: No such file or directory
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f2 aprendiz
+world
+yuliana@lamp:~/proyect$ cat aprendiz | cut -d " " -f1 aprendiz
+hello
+yuliana@lamp:~/proyect$ eco "take advantage of the world around">aprendiz && cut -
+Command 'eco' not found, did you mean:
+
+  command 'echo' from deb coreutils (8.30-3ubuntu2)
+  command 'co' from deb rcs (5.9.4-6)
+  command 'ecl' from deb ecl (16.1.3+ds-4)
+  command 'ecc' from deb ecere-dev (0.44.15-1build3)
+  command 'ecj' from deb ecj (3.16.0-1)
+  command 'peco' from deb peco (0.5.1-1)
+  command 'ecm' from deb gmp-ecm (7.0.4+ds-5)
+  command 'mco' from deb mcollective-client (2.12.1+dfsg-1)
+  command 'ecp' from deb ecere-dev (0.44.15-1build3)
+  command 'ico' from deb x11-apps (7.7+8)
+  command 'ecs' from deb ecere-dev (0.44.15-1build3)
+
+Try: sudo apt install <deb name>
+
+yuliana@lamp:~/proyect$ echo "take advantage of the world around">aprendiz && cut
+of
+yuliana@lamp:~/proyect$ cat aprendiz
+take advantage of the world around
+yuliana@lamp:~/proyect$ echo "the end" > aprendiz
+yuliana@lamp:~/proyect$ cat aprendiz
+the end
+yuliana@lamp:~/proyect$ echo "new lest go">> aprediz
+yuliana@lamp:~/proyect$ cat aprendiz
+the end
+yuliana@lamp:~/proyect$ echo "new lest go">> aprendiz
+yuliana@lamp:~/proyect$ cat aprendiz
+the end
+new lest go
+yuliana@lamp:~/proyect$ echo "hello world" >> aprendiz && cat aprendiz
+the end
+new lest go
+hello world
+yuliana@lamp:~/proyect$ uniq aprendiz> uniq && cat uniq_aprendiz
+cat: uniq_aprendiz: No such file or directory
+yuliana@lamp:~/proyect$ ls .s
+ls: cannot access '.s': No such file or directory
+yuliana@lamp:~/proyect$ ls -s
+total 20
+4 aprediz  4 aprendiz  0 ejemplo  4 otro  4 redes  4 uniq
+yuliana@lamp:~/proyect$ cat usuarios
+cat: usuarios: No such file or directory
+yuliana@lamp:~/proyect$ cat use
+cat: use: No such file or directory
+yuliana@lamp:~/proyect$ nano usuarios
+yuliana@lamp:~/proyect$ uniq aprendiz >uniq_usuarios && cat uniq_usuarios
+the end
+new lest go
+hello world
+yuliana@lamp:~/proyect$ cp/etc/passwd matias
+-bash: cp/etc/passwd: No such file or directory
+yuliana@lamp:~/proyect$ cp/etc/ matias
+-bash: cp/etc/: No such file or directory
+yuliana@lamp:~/proyect$ usuarios/etc/passwd:matias
+-bash: usuarios/etc/passwd:matias: Not a directory
+yuliana@lamp:~/proyect$ cp/usuarios/etc/passwd:matias
+-bash: cp/usuarios/etc/passwd:matias: No such file or directory
+yuliana@lamp:~/proyect$ cp/etc/matias
+-bash: cp/etc/matias: No such file or directory
+yuliana@lamp:~/proyect$ aprendiz/etc/passwd:matias
+-bash: aprendiz/etc/passwd:matias: Not a directory
+yuliana@lamp:~/proyect$ cat/etc/passwd matias
+-bash: cat/etc/passwd: No such file or directory
+yuliana@lamp:~/proyect$ cp/etc/passwd:matias
+-bash: cp/etc/passwd:matias: No such file or directory
+yuliana@lamp:~/proyect$ ^C
+yuliana@lamp:~/proyect$

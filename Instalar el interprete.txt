@@ -1,0 +1,86 @@
+Instalar el interprete:
+
+Primero acceder con permisos de superusuario:
+sudo -i
+
+
+
+Instalacion PHP
+
+apt install php php-mysql -y
+
+
+
+Ahi encuentro todos los usuarios del OS
+nano /etc/passwd
+Me interesa www-data
+
+
+
+Poner contrasena al usuario:
+passwd y el nombre del usuario
+
+passwd www-data
+
+
+
+winscp
+Protocolo SCP
+Puerto 22
+
+con F5 copio
+
+
+
+Para cambiar el propietario del directorio html/
+
+me ubico en var/www
+chown -R www-data:www-data html/
+
+
+Para ejecutar el script
+mysql -u root -p <nombre del script
+mysql -u root -p <tusena.sql
+
+
+--> Creamos Usuario con permisos para la nueva tabla "tusena"
+--> Configuramos el archivo conf o donde esten las variables de entorno
+Editar archivo passwd ubicado en /etc/passwd
+nano /etc/passwd
+cambiar los parametros por defecto del usuario www-data por:
+www-data:x:33:33:www-data:/var/www:/bin/bash
+cambiar el propietario al directorio html
+root@lamp:/var/www# chown -R www-data:www-data html/
+
+recuerden que siempre se debe crear un usuario con privilegios excludivos a la instancia 
+de la aplicación
+
+para ejecutar el script desde consola solo basta con ubicarse en la ruta de la aplicacion
+que contenga el script y dar el comando:
+
+mysql -u root -p<script.sql
+gitlad 
+1.root:/var/www/hmtl/:git clone
+2.ingresar a facuta
+3.
+modificar 
+create database factura
+use factura
+
+priveligios 
+cretate user prl¿forma@"localhost" identified by"factura"
+grant privileges on proforma .* to proforma@"localhost";
+
+fluch priviliges;
+cd config/
+nano  db php.
+inset into cclientes (n,t,e,d,) value ();
+
+
+
+
+
+
+
+
+

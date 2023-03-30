@@ -1,0 +1,37 @@
+Microsoft Windows [Versión 10.0.22621.819]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\USUARIO\OneDrive\Documentos\vue> vue create proyecti
+
+
+Vue CLI v5.0.8
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Babel, Router, Linter
+? Choose a version of Vue.js that you want to start the project with 3.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) No
+? Pick a linter / formatter config: Basic
+? Pick additional lint features: Lint on save
+? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? Yes
+? Save preset as:
+
+
+Vue CLI v5.0.8
+✨  Creating project in C:\Users\USUARIO\OneDrive\Documentos\vue\proyecti.
+⚙️  Installing CLI plugins. This might take a while...
+
+
+added 847 packages in 2m
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+
+added 98 packages in 31s
+⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+🎉  Successfully created project proyecti.
+👉  Get started with the following commands:
+
+ $ cd proyecti

@@ -1,0 +1,4 @@
+detro de este header creamos un img src para ponerla como logo agregamos una  de nuestra pagina web creamos nav le agramos un p con untexto de los que sera la pagina web agramos un footer que es el pie de la pagian donde ia un auidio y un video educativo .
+
+
+    	 		
